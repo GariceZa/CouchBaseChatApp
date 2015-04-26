@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="5sp"
+        android:paddingRight="5sp">
+        <EditText
+            android:id="@+id/userMessage"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="1sp"
+            android:background="@mipmap/ic_send" />
+    </LinearLayout>
+</RelativeLayout>
